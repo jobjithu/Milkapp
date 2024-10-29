@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .card {
+            background-color: #ffffff; /* White card background */
+            border: 1px solid #ced4da; /* Gray border */
+        }
+
+        .card-header {
+            background-color: #007bff; /* Primary blue header background */
+            color: #ffffff; /* White text */
+            border-bottom: 0; /* Remove bottom border */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Primary blue button */
+            border-color: #007bff; /* Matching border color */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+
+        .btn-link {
+            color: #007bff; /* Primary blue for links */
+        }
+
+        .btn-link:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: none; /* Remove underline */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="card shadow">
+                    <div class="card-header text-center">
+                        <h2 class="mb-0">Order Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="/orders" method="post">
+                           
+                            <div class="form-group">
+                                <label for="name">Milk needed:</label>
+                                <input type="number" class="form-control" id="name" placeholder="Enter litre of milk needed" name="userId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Type of milk:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter type of milk" name="userId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Address:</label>
+                                <input type="text" class="form-control" id="Address" placeholder="Enter Address" name="address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Cellno:</label>
+                                <input type="number" class="form-control" id="cellno" placeholder="Enter cellno" name="cellno" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <a href="/dashboard" class="btn btn-primary btn-block mt-4">Back</a></p> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

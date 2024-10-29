@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Milk_app</title>
+    <link rel="icon" type="image/png" href="static/logo.png">
+</head>    
+<nav class="nav-bar">
+    <img class="logo" id="logo" src="../static/logo1.png" alt="img">
+    
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#welcome">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <button><a href="/register">Sign-up</a></button>
+        <button><a href="/login">Sign-in</a></button>
+    </ul>
+</nav>
+
+<div id="welcome" class="welcome" >
+    
+    <h1>Welcome to Milk Website</h1>
+    <h2 id="aboutus">Drink Healthy | Stay Healthy</h2>
+    <h3 >About Us</h3>
+    <hr>
+    <p>
+        Welcome to Milk website, your ultimate destination for everything milk! Founded with a passion for high-quality dairy, we strive to bring you the freshest and most delicious milk products available. Our journey began with a simple belief: that everyone deserves access to wholesome, nutritious milk sourced from sustainable and ethical farms.
+        
+        At Milk website, we take pride in connecting you with local dairy producers who are dedicated to maintaining the highest standards of animal welfare and environmental sustainability. We believe that good milk comes from happy cows, and that’s why we partner with farms that prioritize ethical practices and natural farming methods.
+        
+        Our website is more than just a store; it’s a community hub for milk lovers. Explore our diverse range of products, including organic options, specialty milks, and unique dairy-based creations. Whether you’re looking for lactose-free choices, flavored milks, or recipes to make the most of your dairy, we’ve got you covered.
+        
+        In addition to our products, we are committed to educating our customers about the nutritional benefits of milk and its role in a balanced diet. Join us as we celebrate the versatility of milk, from its use in cooking and baking to its health benefits for people of all ages.
+        
+        Thank you for being part of our journey. Together, let’s raise a glass to the goodness of milk and support our local farmers!</p>
+    <hr>
+</div>
+
+<div class="products" id="products">
+    <div class="img">
+        <img class = "innerimage" src="../static/milk-image.webp" alt="image">
+    <h3>Cow Milk</h3>
+    </div>    
+    <div class="img">
+        <img class = "innerimage" src="../static/buffalo-milk-1000x1000.webp" alt="image">
+    <h3>Buffalo Milk</h3>
+    </div>
+    <div class="img">
+        <img class = "innerimage" src="../static/R.webp" alt="image">
+    <h3>Goat Milk</h3>
+    </div>
+    <div class="img"> 
+        <img class = "innerimage" src="../static/image.jpg" alt="image">
+    <h3>A2 Milk</h3>
+    </div>
+    <div class="img"> 
+        <img class = "innerimage" src="../static/milk-image.webp" alt="image">
+    <h3>Packaged Milk</h3>
+    </div>
+    <div class="img"> 
+        <img class = "innerimage" src="../static/milk-image.webp" alt="image">
+    <h3>Plant-based Milk</h3>
+    </div>
+</div>
+<div class="content">
+    <ul>
+       <li><a href="/register"><button>Buy Now</button></li>
+    </ul>
+</div>
+
+<div class="Footer" id="footer">
+   <h2>Contact Us</h2>
+   <h3>+919342809948 | Instagram | Facebook</h3> 
+   <h4>happy shopping| come again</h4>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nam culpa dolor, officiis sequi eius accusantium ab dicta iure amet velit voluptate voluptatibus sunt debitis quisquam non delectus esse impedit quidem consequuntur odio quam odit nisi dolores? Reiciendis harum odit, voluptates tempora perferendis fuga! Recusandae totam perferendis quod atque natus?</p>
+</div> 
+
+</body>
+</html>
+
+<style>
+    *{
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .nav-bar part */
+    .nav-bar{
+        /* background-color: #87CEEB; */
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 10px;
+        display: flex;align-items: center;justify-content: space-between;
+        background-color: lightblue;
+        position: sticky;
+        top: 0;
+    }
+    
+    li{
+        display: inline-block;
+        padding-right: 25px;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    li:hover{
+        transform: translate(-1%, -5%) scale(110%);
+        transition: transform 0.5s ease;
+
+    }
+    .nav-bar button{
+        color: white;
+    }
+
+    button{
+        border-radius: 10px;
+        padding-right: 20px;
+        font-size: large;
+        color: rgb(215, 214, 224);
+        padding: 5px;
+        color: white;
+        background-color:rgb(221, 220, 230);
+        margin-left: 10px;
+    }
+    button:hover{
+    transform: translate(-1%, -5%) scale(110%);
+    transition: transform 0.5s ease;
+    }
+    nav:hover{
+        cursor: pointer;
+    }
+    .logo{
+        width:8%;
+    }
+    /* Welcome part */
+    .welcome{
+        text-align: center;
+        /* background-color:lightblue; */
+        padding: 50px;
+        border-radius: 10px;
+    
+    }
+    .welcome h2,h3,p{
+        padding-top: 10px;
+    }
+
+    /* products-edit */
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+
+    }
+    .img{
+        display: inline-block;
+    }
+    .innerimage{
+        width: 50%;
+        display: inline-block;
+        margin:20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* content-edit */
+    .content{
+        text-align: center;
+        /* background-color: ; */
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    /* Footer-edit */
+    .Footer{
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+    }
+
+    @media screen and (min-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+   
+   
+</style>
